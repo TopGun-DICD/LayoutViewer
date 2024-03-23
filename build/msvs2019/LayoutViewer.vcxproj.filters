@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\layout">
+      <UniqueIdentifier>{1f57434c-98be-4eec-a436-58b69fc9d968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui">
+      <UniqueIdentifier>{1d8a10e1-fa86-4dcd-996a-116cdbd9ce0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout">
+      <UniqueIdentifier>{5d0f2151-f9ab-4d35-9327-175de28d2145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{e32579f2-f622-4c73-9a21-7ccc62354b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\dialogs">
+      <UniqueIdentifier>{c95d3a82-19e6-4bac-b0b4-2a6d3649a425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\dialogs">
+      <UniqueIdentifier>{ba3af08f-7431-4b69-84f3-cca6744ee101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\moc">
+      <UniqueIdentifier>{85a6ffd7-c0b8-4cf0-91d5-2bb980817b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\layout\gdsii">
+      <UniqueIdentifier>{f3fcb171-bfc3-4eb0-916c-2b8a0e033edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\layout\cif">
+      <UniqueIdentifier>{10ba4961-96dd-4275-b6c4-dd8d2d6d5045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\layout\dxf">
+      <UniqueIdentifier>{dee00b87-a166-4465-80d2-4b860e1f8067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\layout\msk">
+      <UniqueIdentifier>{b13e75d1-77c1-49ef-89cf-7f6f90fa1583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\layout\magic">
+      <UniqueIdentifier>{15e33700-e045-4021-bd09-34d4234442e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\layout\oasis">
+      <UniqueIdentifier>{a9d0daf6-1bb1-4950-a0ae-b58169e77d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout\gdsii">
+      <UniqueIdentifier>{683cf297-9ba7-4e6f-a5de-a9bef15cf5d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout\cif">
+      <UniqueIdentifier>{86034b58-ecd3-4b5f-be3b-139beee819b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout\dxf">
+      <UniqueIdentifier>{1e14e065-9f5a-4214-84b1-e10a6584d8c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout\msk">
+      <UniqueIdentifier>{19966722-cc4f-4500-ab18-6b0d2ad70c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout\magic">
+      <UniqueIdentifier>{ea4a39ed-efd8-4d7f-8973-2c7b8df02cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\layout\oasis">
+      <UniqueIdentifier>{89b2f440-a9a0-49af-b04d-46374b86e56a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sources\gui\LayoutDrawer.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\gui\LayoutWidget.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\gui\Logger.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\gui\MainWindow.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\gui\dialogs\About.cpp">
+      <Filter>Source Files\gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutProcessing.cpp">
+      <Filter>Source Files\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader.cpp">
+      <Filter>Source Files\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter.cpp">
+      <Filter>Source Files\layout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_About.cpp">
+      <Filter>Source Files\moc</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_LayoutDrawer.cpp">
+      <Filter>Source Files\moc</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_LayoutWidget.cpp">
+      <Filter>Source Files\moc</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_Logger.cpp">
+      <Filter>Source Files\moc</Filter>
+    </ClCompile>
+    <ClCompile Include="moc\moc_MainWindow.cpp">
+      <Filter>Source Files\moc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\GDSIIHelperFunctions.cpp">
+      <Filter>Source Files\layout\gdsii</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader_GDSIIascii.cpp">
+      <Filter>Source Files\layout\gdsii</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader_GDSIIbin.cpp">
+      <Filter>Source Files\layout\gdsii</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter_GDSIIascii.cpp">
+      <Filter>Source Files\layout\gdsii</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter_GDSIIbin.cpp">
+      <Filter>Source Files\layout\gdsii</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader_CIF.cpp">
+      <Filter>Source Files\layout\cif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter_CIF.cpp">
+      <Filter>Source Files\layout\cif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader_DXF.cpp">
+      <Filter>Source Files\layout\dxf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter_DXF.cpp">
+      <Filter>Source Files\layout\dxf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader_MSK.cpp">
+      <Filter>Source Files\layout\msk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter_MSK.cpp">
+      <Filter>Source Files\layout\msk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader_MAG.cpp">
+      <Filter>Source Files\layout\magic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter_MAG.cpp">
+      <Filter>Source Files\layout\magic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutReader_OASIS.cpp">
+      <Filter>Source Files\layout\oasis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sources\layout\LayoutWriter_OASIS.cpp">
+      <Filter>Source Files\layout\oasis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sources\gui\LayoutDrawer.hpp">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\gui\LayoutWidget.hpp">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\gui\Logger.hpp">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\gui\MainWindow.hpp">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\gui\dialogs\About.hpp">
+      <Filter>Header Files\gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\Layout.hpp">
+      <Filter>Header Files\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutProcessing.hpp">
+      <Filter>Header Files\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader.hpp">
+      <Filter>Header Files\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter.hpp">
+      <Filter>Header Files\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LinuxCompat.hpp">
+      <Filter>Header Files\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\GDSIIHelperFunctions.hpp">
+      <Filter>Header Files\layout\gdsii</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\GDSIITypes.hpp">
+      <Filter>Header Files\layout\gdsii</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader_GDSIIascii.hpp">
+      <Filter>Header Files\layout\gdsii</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader_GDSIIbin.hpp">
+      <Filter>Header Files\layout\gdsii</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter_GDSIIbin.hpp">
+      <Filter>Header Files\layout\gdsii</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter_GDSIIascii.hpp">
+      <Filter>Header Files\layout\gdsii</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader_CIF.hpp">
+      <Filter>Header Files\layout\cif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter_CIF.hpp">
+      <Filter>Header Files\layout\cif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader_DXF.hpp">
+      <Filter>Header Files\layout\dxf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter_DXF.hpp">
+      <Filter>Header Files\layout\dxf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader_MSK.hpp">
+      <Filter>Header Files\layout\msk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter_MSK.hpp">
+      <Filter>Header Files\layout\msk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader_MAG.hpp">
+      <Filter>Header Files\layout\magic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter_MAG.hpp">
+      <Filter>Header Files\layout\magic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutReader_OASIS.hpp">
+      <Filter>Header Files\layout\oasis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sources\layout\LayoutWriter_OASIS.hpp">
+      <Filter>Header Files\layout\oasis</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

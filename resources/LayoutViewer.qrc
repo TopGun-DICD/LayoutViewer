@@ -1,0 +1,12 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/toolbar">
+		<!-- Menu "File" -->
+		<file alias="file_open.png">file_open.png</file>
+		<!-- Menu "Help" -->
+		<file alias="help_qt.png">help_qt.png</file>
+	</qresource>
+	<qresource prefix="/other">
+		<file alias="appicon.png">appicon.png</file>
+	</qresource>
+</RCC>

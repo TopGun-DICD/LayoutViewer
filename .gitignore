@@ -1,32 +1,16 @@
-# Prerequisites
-*.d
+# 	Из папки bin
+## 	Для MS Visual Studio 2019/2022
+bin/*.exe
+bin/*.pdb
+bin/*.dll
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# 	Из папки build
+## 	Для MS Visual Studio 2019
+build/msvs2019/moc/
+build/msvs2019/x64/
+build/msvs2019/.vs/
+## 	Для MS Visual Studio 2022
+build/msvs2022/moc/
+build/msvs2022/x64/
+build/msvs2022/.vs/
+## Для QtCreator
