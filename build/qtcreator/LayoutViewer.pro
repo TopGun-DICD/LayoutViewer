@@ -1,4 +1,8 @@
-QT += core gui widgets
+equals(QT_MAJOR_VERSION, 5) {
+    QT += core gui widgets opengl
+} else {
+    QT += core gui widgets opengl openglwidgets
+}
 
 TARGET = HDLDebugger
 

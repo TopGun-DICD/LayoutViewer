@@ -16,6 +16,7 @@ class LayoutReader_GDSIIascii : public LayoutReader {
   Geometry     *p_activeGeometry;
 public:
   LayoutReader_GDSIIascii();
+	virtual ~LayoutReader_GDSIIascii() = default;
 public:
   bool IsMyFormat(const STR_CLASS &fName) final;
   bool Read(Layout *layout) final;

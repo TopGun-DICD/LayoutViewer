@@ -6,6 +6,7 @@
 #include <QLabel>
 #include <QTextEdit>
 #include <QDialogButtonBox>
+#include <QtGlobal>
 
 const QString htmlText(
   "<b>LayoutViewer</b> is the software aimed to test and implement layout processing operations and algorithm.<br/><br/>"
@@ -16,7 +17,9 @@ Dialog_About::Dialog_About(QWidget *parent) : QDialog(parent) {
   setWindowTitle(tr("About LayoutViewer"));
 
   QVBoxLayout* p_globalLayout = new QVBoxLayout(this);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
   p_globalLayout->setMargin(0);
+#endif
 
   QHBoxLayout* p_logoLayout = new QHBoxLayout(this);
   p_logoLayout->setAlignment(Qt::AlignBottom);
@@ -27,7 +30,9 @@ Dialog_About::Dialog_About(QWidget *parent) : QDialog(parent) {
   p_logoLayout->addWidget(p_logoLabel);
 
   QVBoxLayout *p_textLayout = new QVBoxLayout(this);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
   p_textLayout->setMargin(10);
+#endif
 
   QLabel *p_labelName = new QLabel("LayoutViewer");
   QFont f(p_labelName->font().family());
@@ -50,7 +55,9 @@ Dialog_About::Dialog_About(QWidget *parent) : QDialog(parent) {
   p_globalLayout->addLayout(p_logoLayout);
 
   QVBoxLayout *p_buttonLayout = new QVBoxLayout(this);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
   p_buttonLayout->setMargin(10);
+#endif
   QDialogButtonBox *p_buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok);
   connect(p_buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
 

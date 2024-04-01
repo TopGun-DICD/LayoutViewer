@@ -9,6 +9,7 @@ class LayoutReader_CIF : public LayoutReader {
   Geometry *p_activeItem;
 public:
   LayoutReader_CIF();
+  virtual ~LayoutReader_CIF() = default;
 public:
   bool IsMyFormat(const STR_CLASS &fName) final;
   bool Read(Layout *layout) final;

@@ -16,6 +16,7 @@
 class LayoutWriter_GDSIIascii : public LayoutWriter {
 public:
   LayoutWriter_GDSIIascii();
+	virtual ~LayoutWriter_GDSIIascii() = default;
 public:
   bool Write(const STR_CLASS &fileName, Layout *layout) final;
 private:

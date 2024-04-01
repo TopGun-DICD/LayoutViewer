@@ -25,6 +25,7 @@ protected:
   std::ifstream file;
 public:
   LayoutReader();
+  virtual ~LayoutReader() = default;
 public:
   virtual bool IsMyFormat(const STR_CLASS &fName) = 0;
   virtual bool Read(Layout *layout) = 0;

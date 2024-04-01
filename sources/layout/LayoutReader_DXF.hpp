@@ -9,6 +9,7 @@ class LayoutReader_DXF : public LayoutReader {
   Geometry *p_activeItem;
 public:
   LayoutReader_DXF();
+  virtual ~LayoutReader_DXF() = default;
 public:
   bool IsMyFormat(const STR_CLASS &fName) final;
   bool Read(Layout *layout) final;

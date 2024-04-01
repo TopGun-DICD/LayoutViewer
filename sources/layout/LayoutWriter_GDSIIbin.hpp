@@ -11,6 +11,7 @@
 class LayoutWriter_GDSIIbin : public LayoutWriter {
 public:
   LayoutWriter_GDSIIbin();
+  virtual ~LayoutWriter_GDSIIbin() = default;
 public:
   bool Write(const STR_CLASS &fileName, Layout *layout) final;
 private:

@@ -9,6 +9,7 @@ class LayoutReader_MAG : public LayoutReader {
   Geometry *p_activeItem;
 public:
   LayoutReader_MAG();
+  virtual ~LayoutReader_MAG() = default;
 public:
   bool IsMyFormat(const STR_CLASS &fName) final;
   bool Read(Layout *layout) final;

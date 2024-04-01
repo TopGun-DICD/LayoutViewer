@@ -125,7 +125,7 @@ bool LayoutReader_MSK::Read(Layout *layout)
         layout->libraries[0]->elements[0]->maxCoord.y = layout->libraries[0]->elements[0]->geometries[i]->maxCoord.y;
     }
   }
-  catch (const std::exception &ex)
+  catch (const std::exception &/*ex*/)
   {
 
     if (file.is_open()) { file.close(); }
@@ -161,8 +161,11 @@ LayoutReader_MSK::ReadRecCoords(
 {
   char layerNameCstr[8] = { '\0' };
   int32_t width = 0, height = 0;
+#ifdef _MSC_VER
   if (!sscanf_s(Line.c_str(), "REC(%d,%d,%d,%d,%s)", &LeftBot.x, &LeftBot.y, &width, &height, layerNameCstr, 8)) { return false; }
-
+#else
+  if (!sscanf(Line.c_str(), "REC(%d,%d,%d,%d,%s)", &LeftBot.x, &LeftBot.y, &width, &height, layerNameCstr)) { return false; }
+#endif
   LayerName = layerNameCstr;
   if (')' == LayerName[LayerName.length() - 1]) { LayerName.pop_back(); }
   //std::cout << layer_name << std::endl;
@@ -255,7 +258,7 @@ LayoutReader_MSK::ReadSectionRectangle(
 
     p_activeElement->geometries.push_back(currBox);
   }
-  catch (const std::exception &ex)
+  catch (const std::exception &/*ex*/)
   {
     if (currBox)
     {
@@ -274,7 +277,11 @@ LayoutReader_MSK::ReadBoundingBox(
   try {
     Coord leftBot;
     Coord rightTop;
+#ifdef _MSC_VER
     if (!sscanf_s(FileLine.c_str(), "BB(%d,%d,%d,%d)", &leftBot.x, &leftBot.y, &rightTop.x, &rightTop.y)) { throw std::runtime_error("Coordinates was not read"); }
+#else
+    if (!sscanf(FileLine.c_str(), "BB(%d,%d,%d,%d)", &leftBot.x, &leftBot.y, &rightTop.x, &rightTop.y)) { throw std::runtime_error("Coordinates was not read"); }
+#endif
     Layer boundingBoxLayer;
     int16_t layerNum = g_layerMap.find("BB")->second;
     boundingBoxLayer.layer = layerNum;
@@ -287,7 +294,7 @@ LayoutReader_MSK::ReadBoundingBox(
     p_activeLibrary->layers.push_back(boundingBoxLayer);
     p_activeElement->geometries.push_back(boundingBox);
   }
-  catch (std::exception &ex)
+  catch (std::exception &/*ex*/)
   {
     if (boundingBox)
     {
@@ -309,7 +316,11 @@ LayoutReader_MSK::ReadTitle(
     char buf[64] = { '\0' };
     Coord leftBot;
 
+#ifdef _MSC_VER
     if (!sscanf_s(FileLine.c_str(), "TITLE %d %d  #%s", &leftBot.x, &leftBot.y, buf, 64)) { throw std::runtime_error("Title was not read"); }
+#else
+    if (!sscanf(FileLine.c_str(), "TITLE %d %d  #%s", &leftBot.x, &leftBot.y, buf)) { throw std::runtime_error("Title was not read"); }
+#endif
 
     p_text->coords.push_back(leftBot);
     p_text->layer = g_layerMap.find("TITLE")->second;
@@ -317,7 +328,7 @@ LayoutReader_MSK::ReadTitle(
     p_text->width = static_cast<int32_t>(strlen(buf));
     p_text->stringValue = buf;
   }
-  catch (std::exception &ex)
+  catch (std::exception &/*ex*/)
   {
     if (text)
     {

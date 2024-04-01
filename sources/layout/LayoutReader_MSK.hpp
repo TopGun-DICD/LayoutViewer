@@ -22,6 +22,7 @@ private:
 
 public:
   LayoutReader_MSK() : p_activeLibrary(nullptr), p_activeElement(nullptr), p_active_geometry_item(nullptr) {}
+  virtual ~LayoutReader_MSK() = default;
 
   bool            IsMyFormat(const STR_CLASS &fName) override final;
   bool            Read(Layout *layout) override final;

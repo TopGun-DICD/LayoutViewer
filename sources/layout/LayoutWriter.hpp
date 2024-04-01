@@ -13,6 +13,7 @@ protected:
   std::ofstream file;
 public:
   LayoutWriter();
+  virtual ~LayoutWriter() = default;
 public:
   virtual bool Write(const STR_CLASS &fileName, Layout *layout) = 0;
 };
