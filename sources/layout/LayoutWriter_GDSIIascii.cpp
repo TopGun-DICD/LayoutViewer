@@ -75,12 +75,10 @@ void LayoutWriter_GDSIIascii::WriteSection_BEGINLIBRARY() {
     file << "BGNLIB ";
 
     std::time_t t = std::time(nullptr);
-    std::tm now;
-
-    localtime_s(&now, &t);
+    std::tm *now = localtime(&t);
 
     char buffer[128];
-    strftime(buffer, sizeof(buffer), "%m/%d/%Y %X", &now);
+    strftime(buffer, sizeof(buffer), "%m/%d/%Y %X", now);
     std::string lastTimeAccessed = buffer;
     std::string lastTimeModified = lastTimeAccessed;
     
@@ -103,12 +101,10 @@ void LayoutWriter_GDSIIascii::WriteSection_BEGINSTRUCTURE(Element* element) {
     file << "\nBGNSTR ";
 
     std::time_t t = std::time(nullptr);
-    std::tm now;
-
-    localtime_s(&now, &t);
+    std::tm *now = localtime(&t);
 
     char buffer[128];
-    strftime(buffer, sizeof(buffer), "%m/%d/%Y %X", &now);
+    strftime(buffer, sizeof(buffer), "%m/%d/%Y %X", now);
     std::string lastTimeAccessed = buffer;
     std::string lastTimeModified = lastTimeAccessed;
 
